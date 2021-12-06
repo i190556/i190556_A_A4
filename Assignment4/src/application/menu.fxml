@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="479.0" style="-fx-background-color: grey;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.menu_controller">
+   <children>
+      <Label alignment="CENTER" layoutX="91.0" layoutY="28.0" prefHeight="96.0" prefWidth="295.0" text="Main Menu" textFill="#030303" underline="true">
+         <font>
+            <Font name="Footlight MT Light" size="45.0" />
+         </font>
+      </Label>
+      <Button fx:id="basic" layoutX="29.0" layoutY="164.0" mnemonicParsing="false" onAction="#basic_calc" prefHeight="76.0" prefWidth="138.0" style="-fx-background-color: #3f3d40;" text="Basic Calculator" textFill="WHITE" />
+      <Button fx:id="curr" layoutX="28.0" layoutY="284.0" mnemonicParsing="false" onAction="#curr_calc" prefHeight="76.0" prefWidth="138.0" style="-fx-background-color: #3f3d40;" text="Currency Converter" textFill="WHITE" />
+      <Button fx:id="bmi" layoutX="299.0" layoutY="164.0" mnemonicParsing="false" onAction="#bmi_calc" prefHeight="76.0" prefWidth="138.0" style="-fx-background-color: #3f3d40;" text="BMI Calculator" textFill="WHITE" />
+      <Button fx:id="invest" layoutX="299.0" layoutY="284.0" mnemonicParsing="false" onAction="#invest_calc" prefHeight="76.0" prefWidth="138.0" style="-fx-background-color: #3f3d40;" text="Investment Calculator" textFill="WHITE" />
+      <Button fx:id="age" layoutX="28.0" layoutY="403.0" mnemonicParsing="false" onAction="#age_calc" prefHeight="76.0" prefWidth="138.0" style="-fx-background-color: #3f3d40;" text="Age Calculator" textFill="WHITE" />
+      <Button fx:id="disc" layoutX="299.0" layoutY="403.0" mnemonicParsing="false" onAction="#disc_calc" prefHeight="76.0" prefWidth="138.0" style="-fx-background-color: #3f3d40;" text="DIscount Calculator" textFill="WHITE" />
+      <Circle layoutX="14.0" layoutY="202.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="14.0" layoutY="322.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="14.0" layoutY="441.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="458.0" layoutY="202.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="458.0" layoutY="322.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="458.0" layoutY="441.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <CubicCurve controlX1="-50.0" controlX2="25.20001220703125" controlY1="-100.0" controlY2="87.20001220703125" endX="150.0" fill="#000000d1" layoutX="239.0" layoutY="31.0" startX="-150.0" stroke="BLACK" />
+      <CubicCurve controlX1="-109.80000305175781" controlX2="39.0" controlY1="85.51849365234375" controlY2="-67.11515045166016" endX="150.0" fill="#000000d1" layoutX="233.0" layoutY="123.0" startX="-150.0" stroke="BLACK" />
+   </children>
+</AnchorPane>

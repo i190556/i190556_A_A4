@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="671.0" prefWidth="729.0" style="-fx-background-color: grey;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.basic_calc_controller">
+   <children>
+      <TextField fx:id="lower_box" alignment="CENTER_RIGHT" editable="false" layoutX="6.0" layoutY="100.0" prefHeight="98.0" prefWidth="716.0" style="-fx-background-color: #eaffec;">
+         <font>
+            <Font size="43.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="upper_box" alignment="CENTER_RIGHT" editable="false" layoutX="6.0" layoutY="14.0" prefHeight="98.0" prefWidth="716.0" style="-fx-background-color: #eaffec;">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </TextField>
+      <AnchorPane layoutX="-3.0" layoutY="-44.0" prefHeight="57.0" prefWidth="458.0" style="-fx-background-color: grey;" />
+      <Button fx:id="one" layoutX="26.0" layoutY="446.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="95.0" prefWidth="127.0" style="-fx-background-color: #3f3d40;" text="1">
+         <font>
+            <Font name="Bodoni MT Poster Compressed" size="44.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color opacity="0.5058823823928833" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="clear" layoutX="444.0" layoutY="221.0" mnemonicParsing="false" onAction="#clear" prefHeight="103.0" prefWidth="127.0" style="-fx-background-color: #3f3d40;" text="AC" textFill="#ae1414" underline="true">
+         <font>
+            <Font name="Bell MT" size="35.0" />
+         </font>
+      </Button>
+      <Button fx:id="zero" layoutX="26.0" layoutY="551.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="95.0" prefWidth="127.0" style="-fx-background-color: #3f3d40;" text="0">
+         <font>
+            <Font name="Bell MT" size="44.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color opacity="0.5058823823928833" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="equals" layoutX="444.0" layoutY="550.0" mnemonicParsing="false" onAction="#equals" prefHeight="98.0" prefWidth="273.0" style="-fx-background-color: #3f3d40;" text="=" textFill="#b1b1b1">
+         <font>
+            <Font name="Bell MT" size="44.0" />
+         </font>
+      </Button>
+      <Button fx:id="two" layoutX="162.0" layoutY="446.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="95.0" prefWidth="127.0" style="-fx-background-color: #3f3d40;" text="2">
+         <font>
+            <Font name="Bell MT" size="44.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color opacity="0.5058823823928833" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="four" layoutX="26.0" layoutY="336.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="98.0" prefWidth="128.0" style="-fx-background-color: #3f3d40;" text="4">
+         <font>
+            <Font name="Bell MT" size="44.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color opacity="0.5058823823928833" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="five" layoutX="161.0" layoutY="336.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="98.0" prefWidth="129.0" style="-fx-background-color: #3f3d40;" text="5">
+         <font>
+            <Font name="Bell MT Bold" size="44.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color opacity="0.5058823823928833" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="seven" layoutX="26.0" layoutY="224.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="95.0" prefWidth="127.0" style="-fx-background-color: #3f3d40;" text="7">
+         <font>
+            <Font name="Bell MT" size="44.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color opacity="0.5058823823928833" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="eight" layoutX="162.0" layoutY="224.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="95.0" prefWidth="127.0" style="-fx-background-color: #3f3d40;" text="8">
+         <font>
+            <Font name="Bell MT" size="44.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color opacity="0.5058823823928833" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="nine" layoutX="301.0" layoutY="224.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="95.0" prefWidth="127.0" style="-fx-background-color: #3f3d40;" text="9">
+         <font>
+            <Font name="Bell MT" size="44.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color opacity="0.5058823823928833" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="six" layoutX="301.0" layoutY="336.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="95.0" prefWidth="127.0" style="-fx-background-color: #3f3d40;" text="6">
+         <font>
+            <Font name="Bell MT" size="44.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color opacity="0.5058823823928833" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="three" layoutX="301.0" layoutY="446.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="95.0" prefWidth="127.0" style="-fx-background-color: #3f3d40;" text="3">
+         <font>
+            <Font name="Bell MT" size="44.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color opacity="0.5058823823928833" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="division" layoutX="584.0" layoutY="221.0" mnemonicParsing="false" onAction="#divide" prefHeight="98.0" prefWidth="127.0" style="-fx-background-color: #3f3d40;" text="÷">
+         <font>
+            <Font name="Bell MT" size="47.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color opacity="0.5058823823928833" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="mult" layoutX="444.0" layoutY="336.0" mnemonicParsing="false" onAction="#multiply" prefHeight="95.0" prefWidth="127.0" style="-fx-background-color: #3f3d40;" text="x">
+         <font>
+            <Font name="Bell MT" size="44.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color opacity="0.5058823823928833" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="minus" layoutX="444.0" layoutY="443.0" mnemonicParsing="false" onAction="#substract" prefHeight="103.0" prefWidth="127.0" style="-fx-background-color: #3f3d40;" text="-">
+         <font>
+            <Font name="Bell MT" size="44.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color opacity="0.5058823823928833" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="plus" layoutX="583.0" layoutY="335.0" mnemonicParsing="false" onAction="#add" prefHeight="209.0" prefWidth="130.0" style="-fx-background-color: #3f3d40;" text="+">
+         <font>
+            <Font name="Bell MT" size="44.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color opacity="0.5058823823928833" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="decimal" layoutX="162.0" layoutY="552.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="95.0" prefWidth="127.0" style="-fx-background-color: #3f3d40;" text=".">
+         <font>
+            <Font name="Bell MT" size="44.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color opacity="0.5058823823928833" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="d_zero" layoutX="300.0" layoutY="552.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="95.0" prefWidth="127.0" style="-fx-background-color: #3f3d40;" text="00">
+         <font>
+            <Font name="Bell MT" size="44.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color opacity="0.5058823823928833" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Button fx:id="back" layoutX="6.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" prefHeight="34.0" prefWidth="106.0" style="-fx-background-color: #3f3d40;" text="BACK" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="26.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
